@@ -18,7 +18,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="join">
-        <button className="btn">Join Class</button>
+        <button className="btn">Join Classes</button>
       </div>
     </div>
   );
