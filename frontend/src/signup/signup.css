@@ -1,3 +1,4 @@
+
 .signup-container {
     display: flex;
     justify-content: center;
@@ -12,6 +13,8 @@
     padding: 30px 40px;
     border-radius: 10px;
     width: 300px;
+    background-image: url("signup2.jpg");
+    background-size: cover;
     background-color: #640d14;
     text-align: center;
 }

@@ -1,28 +1,22 @@
 import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Boxes from './components/Boxes'
-import Nav from './clubs/Nav'
-import Heroclub from './clubs/Heroclub'
-import Welcome from './clubs/Welcome'
+import React from 'react'
 import Signup from './signup/Signup'
-import Login from './login/Login'
+import Navbar from './components/Navbar/Navbar'
+import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/*<Navbar/>
-      <Hero/>
+     <Navbar/>
+       {/*<Hero/>
       <Boxes/>
       <Nav/>
       <Heroclub/>
       <Welcome/>
-      <Signup/>*/}
-      <Login/>
-      
+      <Login/>*/}
+      <Signup/>
     </>
   )
 }
