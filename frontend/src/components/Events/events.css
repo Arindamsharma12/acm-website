@@ -1,0 +1,63 @@
+.master {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-image {
+    background-image: url("events-bg.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.heading {
+    color: #b7b7b7;
+    text-align: center;
+    top: 20px;
+    
+    position: absolute;
+    font-size: 3rem;
+    z-index: 1;
+    font-family:Raleway;
+}
+
+.event-section {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.left-arrow{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow:hover {
+    font-size: 70px;
+}
+
+.right-arrow{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.right-arrow:hover {
+    font-size: 70px;
+}
