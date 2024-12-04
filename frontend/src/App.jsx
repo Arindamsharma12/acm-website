@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
-import Signup from './signup/Signup'
+import Signup from './components/signup/Signup'
+import Login from './components/login/Login'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
 import About from './components/About/About'
@@ -14,20 +15,19 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/>
-      <Hero/>
+      <Navbar/>
+      {/* <Hero/>
       <Boxes/>
       <Nav/>
       <Heroclub/>
       <Welcome/>
       <Login/>
-      <Signup/> 
-      <Events/>
-      <Video/>
-      <About/> 
-      <Zenith/> */}
       <Team/>
-      
+      <Video/>
+      <About/>
+       <Events/> 
+      <Zenith/> */}
+      <Signup/> 
     </>
   )
 }

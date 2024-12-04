@@ -32,22 +32,24 @@ const ImageSlider = ({ slides }) => {
         // zIndex: "1",
         cursor: "pointer",
     };
-    const goToPrevious = () =>{
+    const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
-    const goToNext = () =>{
+    const goToNext = () => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
     return (
-    <div style={sliderStyles}>
-        <div className="left-arrow" style={leftArrowStyles} onClick={goToPrevious}><i class="fa-solid fa-chevron-left"></i></div>
-        <div className="right-arrow" style={rightArrowStyles} onClick={goToNext}><i class="fa-solid fa-chevron-right"></i></div>
-        <div style={slidesStyles}></div>
-    </div>
+        <div style={sliderStyles}>
+            <div style={slidesStyles}></div>
+            <div className="slider-container">
+                <div className="left-arrow" style={leftArrowStyles} onClick={goToPrevious}><i class="fa-solid fa-chevron-left"></i></div>
+                <div className="right-arrow" style={rightArrowStyles} onClick={goToNext}><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
     )
 };
 

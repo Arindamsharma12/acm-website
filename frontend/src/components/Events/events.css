@@ -11,12 +11,13 @@
 .bg-image {
     background-image: url("events-bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    object-fit: cover;
     z-index: -1;
 }
 
@@ -24,40 +25,79 @@
     color: #b7b7b7;
     text-align: center;
     top: 20px;
-    
     position: absolute;
     font-size: 3rem;
     z-index: 1;
-    font-family:Raleway;
+    font-family: "Raleway", sans-serif;
 }
 
 .event-section {
     width: 90%;
-    height: 400px;
+    max-width: 1200px;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; Center items for smaller screens */
+    /* flex-wrap: wrap; Allow wrapping for responsiveness */
     margin-top: 50px;
 }
 
-.left-arrow{
+.left-arrow,
+.right-arrow {
     font-size: 40px;
     color: #fff;
     cursor: pointer;
     z-index: 10;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.left-arrow:hover {
-    font-size: 70px;
-}
-
-.right-arrow{
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 10;
-}
-
+.left-arrow:hover,
 .right-arrow:hover {
-    font-size: 70px;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .event-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-arrow, .right-arrow {
+        transform: none;
+        font-size: 1rem;
+    }
+
+    .slider-container {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+        /* Smaller heading for mobile */
+        top: 10px;
+        /* Adjust position */
+    }
+
+    .event-section {
+        height: auto;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 25px;
+        /* Further reduce arrow size */
+
+    }
 }

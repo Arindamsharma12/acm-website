@@ -1,4 +1,4 @@
-.signup-container {
+.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 100vh;  
 }
 
-.signup-box {
+.login-box {
     color: white;
     padding: 30px 40px;
     border-radius: 10px;
@@ -18,14 +18,14 @@
     text-align: center;
 }
 
-.sub-signup {
+.sub-login {
     color: white;
     font-style: italic;
     text-align: left;
     margin-bottom: 20px;
 }
 
-.signup-button {
+.login-button {
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -38,7 +38,7 @@
     
 }
 
-.signup-button:hover {
+.login-button:hover {
     background-color: #ad2831;
   }
 
@@ -71,7 +71,7 @@
     font-weight: 500;
   }
 
-  .input-signup {
+  .input-login {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -95,5 +95,5 @@
   }
 
   .submit:hover {
-    background-color: #ad2831;
+    background-color: #b7b7b7;
   }
