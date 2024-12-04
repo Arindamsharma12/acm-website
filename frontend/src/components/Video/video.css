@@ -28,7 +28,7 @@
 }
 
 .logo {
-    background-image: url("logo2.png");
+    background-image: url("logo3.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,3 +48,19 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .logo {
+        height: 50vh;
+        width: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .motto {
+        font-size: 12px;
+        margin-top: 300px;
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}

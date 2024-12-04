@@ -6,23 +6,28 @@ import './App.css'
 import About from './components/About/About'
 import Video from './components/Video/Video'
 import Events from './components/Events/Events'
+import Zenith from './components/Zenith/Zenith'
+import Team from './components/Team/Team'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/*<Navbar/>
+      {/* <Navbar/>
       <Hero/>
       <Boxes/>
       <Nav/>
       <Heroclub/>
       <Welcome/>
       <Login/>
-      <Signup/>
-      <Video/>
-      <About/>*/}
+      <Signup/> 
       <Events/>
+      <Video/>
+      <About/> 
+      <Zenith/> */}
+      <Team/>
+      
     </>
   )
 }
