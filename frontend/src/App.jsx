@@ -22,12 +22,12 @@ function App() {
       <Heroclub/>
       <Welcome/>
       <Login/>
-      <Team/>
       <Video/>
       <About/>
-       <Events/> 
-      <Zenith/> */}
+      <Zenith/> 
       <Signup/> 
+       <Events/> */}
+       <Team/>
     </>
   )
 }
